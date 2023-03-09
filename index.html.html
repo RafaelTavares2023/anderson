@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de Gatos</title>
+</head>
+<body>
+    <h1>Qual a quantidade de gatos?</h1>
+    <p>Anderson precisa achar 2 miau no dia total de 50 miau no mes sem contar os domingos, quais gatos anderson pegou? sera que ele bateu meta?</p>
+    O total de gatos que o Anderson/Nego conseguiu no mes foi? <input type="number" name="gato" id="gato">
+    <input type="button" value="Enviar" onclick="gatinhos()">
+    <div id="res"></div>
+
+    <script>
+        function gatinhos() {
+        var gat = document.getElementById('gato')
+        var res = document.getElementById('res')
+        gat = Number(gato.value)
+        if (gat >= 50){
+            res.innerHTML = '<strong>Anderson/Nego Conseguiu a meta!</strong>'
+
+        } else {
+            res.innerHTML = '<strong>Anderson não conseguiu a meta, não merece mais ser chamado de nego!</strong>'
+        }
+        }
+    </script>
+    
+</body>
+</html>
